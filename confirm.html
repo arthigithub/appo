@@ -1,0 +1,28 @@
+<html>
+<head>
+
+</head>
+<body>
+<h1 id="win"> popup test</h1>
+
+
+<button onclick="myFunction()">submit</button>
+
+<script>
+	
+	
+		function myFunction(){
+			var txt;
+			  if(confirm("Press a button!")){
+				txt="press ok";
+			  }
+			  else{
+				txt="press cancel";
+			  }
+			  document.getElementById("win").innerHTML=txt;
+			}
+	
+</script>
+
+</body>
+</html>

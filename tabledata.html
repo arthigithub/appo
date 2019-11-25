@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table data using json</title>
+	<style>
+		.tbl{
+			border-collapse:collapse;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="demo"></h1>
+	<table border="4" cellpadding="10px" cellspacing="10px" class="tbl">
+	<tr>
+	<th>color</th>
+	<th>price</th>
+	<th>name</th>
+	</tr>
+	
+	<tr class="td" >
+	<td class="td1">dsfd</td>
+	<td class="td2">dsfd</td>
+	<td class="td3">dsfd</td>
+	<tr class="td" >
+	<td class="td1">dsfd</td>
+	<td class="td2">dsfd</td>
+	<td class="td3">dsfd</td>
+	<tr class="td" >
+	<td class="td1">dsfd</td>
+	<td class="td2">dsfd</td>
+	<td class="td3">dsfd</td>
+	
+	</tr>
+	</table>
+<script>
+	var a=[
+			{color:"red",price:450,name:"abc"},
+			{color:"green",price:550,name:"efg"},
+			{color:"blue",price:650,name:"mnp"}
+			];
+	//document.write(a[2]["price"]+a[1]["name"]);
+	var i;
+	for(i=0;i<a.length;i++){
+		document.getElementsByClassName("td1")[i].innerHTML=a[i]["color"];
+		document.getElementsByClassName("td2")[i].innerHTML=a[i]["price"];
+		document.getElementsByClassName("td3")[i].innerHTML=a[i]["name"];
+		}
+</script>
+
+
+<body>
+</html>

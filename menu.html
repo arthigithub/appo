@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Menu</title>
+
+<style>
+	body{
+		background-image:url("images/bck.jpg");
+	}
+	ul{
+		background-color:white;
+	}
+	li{
+		display:inline-block;
+		padding:10px;
+	}
+	li>a{
+		text-decoration:none;
+		background-color:white;
+		color:black;
+	}
+	li>a:hover{
+		background-color:blue;
+		color:white;
+		padding:10px;
+	}
+	.drpdwn-cnt>a{
+		text-decoration:none;
+		display:block;
+		padding:5px;
+		background-color:white;
+		color:black;
+	}
+	.drpdwn-cnt{
+		position:absolute;
+		margin-top:10px;
+		display:none;
+	
+	}
+	.drpdwm-btn:hover .drpdwn-cnt{
+		display:block;
+		background-color:,blue;
+	}
+	a.red{
+	background-color:red;
+	}
+	a.green{
+	background-color:green;
+	}
+</style>
+
+</head>
+<body>
+<ul>
+	<li><a href="">Home</a></li>
+	<li><a href="">About Us</a></li>
+	<li class="drpdwm-btn"><a href="">Courses</a>
+	<div class="drpdwn-cnt">
+		<a href="" class="red">Web Designing</a>
+		<a href="" class="green">Web Development</a>
+		<a href="" class="red">Python</a>
+		<a href="" class="green">Aws</a>
+		<a href="" class="red">Graphics</a>
+		<a href="" class="green">Photoshop</a>
+		<a href="" class="red">software testing</a>
+	</div>
+	</li>
+	<li><a href="">Branches</a></li>
+	<li><a href="">Contact Us</a></li>	
+</ul>
+
+</body>
+</html>

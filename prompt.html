@@ -1,0 +1,26 @@
+<html>
+<head>
+
+</head>
+<body>
+<h1 id="promid">welcome</h1>
+<button onclick="myFunction()">prompt</button>
+
+<script>
+	function myFunction(){
+		var txt;
+		var person=prompt("please enter your name","h.potter");
+		if( person == null || person=" "){
+			txt="user cancelled the promt.";
+		}
+		else{
+			txt="Hello"+person+"how are you!";
+		}
+		document.getElementById("promid").innerHTML=txt;
+	}
+
+</script>
+
+
+</body>
+</html>

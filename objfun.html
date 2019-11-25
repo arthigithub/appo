@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+</head>
+<body>
+
+	<h1 id="proid" align="center">Access Property</h1>
+	
+	<h1 id="proid1" align="center">Access Property</h1>
+	
+	<h1 id="proid2" align="center">Access Property</h1>
+	
+	
+
+<script>
+	var ref={brand:"LG",color:"white",plates:5,
+	start:function(){
+		return "PLATE NO :   "+this.plates+ "  AND COLOR OF REF :  " +ref.color; 
+	}
+	};
+	
+	/*accessing the function using objectname.functionname()  */
+	document.getElementById("proid2").innerHTML=ref.start();
+	
+	
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+body{
+	background-image:url("images/bck.jpg");
+}
+form{
+		background-color:linear-gradiant(rgb(1.0,0.0,0.0),rgb(0.0,0.0,0.1));
+		position:absolute;
+		top:100px;
+		left:400px;
+		width:600px;
+}
+.labcls{
+		font-size:20px;
+		font-style:bold;
+		
+		float:left;
+}
+.fm{
+		padding:15px 10px;
+		margin:5px;
+		width:300px;
+}
+.ta{
+	padding:25px;
+	margin:5px;
+	width:300px;
+}

@@ -1,0 +1,42 @@
+body{
+    background-color: antiquewhite;
+}
+li>a{
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+    padding: 10px;
+}
+.menu{
+    text-align: center;
+    background-color: brown;
+}
+.dropdwn_cnt{
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+}
+.dropdwn_cnt>a{
+    display: block;
+    text-align: initial;
+    text-decoration: none;
+    padding: 5px;
+    background-color: aquamarine;
+}
+.dropdwn_btn:hover .dropdwn_cnt{
+    display: block;
+}
+iframe{
+    position: fixed;
+    left: 10px;
+    border: solid 5px rgb(97, 95, 95);
+    box-shadow: 10px 10px rgb(169, 169, 177);
+}
+form{
+    position: fixed;
+    right: 10px;
+}
+input{
+    display: inline;
+}

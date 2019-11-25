@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+</head>
+<body>
+
+	
+	<button onclick="load()">Return</button>
+	
+	<button onclick="load1(10)">Return</button>
+	
+	<h1 id="proid3" align="center">Access Property</h1>
+	
+	<button onclick="load2(5,4)">Return</button>
+	
+	
+<script>
+	function load(){
+		window.alert("notification");
+	}
+	
+	
+	function load1(a){
+		window.alert(a);
+	}
+	
+	function load2(a, b){
+		window.alert(a+b);
+		
+		
+		var ref={brand:"LG",color:"black",plates:10,
+	start:function(){
+		return "PLATE NO :   "+this.plates+ "  AND COLOR OF REF :  " +ref.color; 
+	}
+	};
+	
+	document.getElementById("proid3").innerHTML=ref.start();
+	}
+</script>
+
+</body>
+</html>
