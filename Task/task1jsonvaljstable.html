@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Json values in js table</title>
+	<script src="jquery.js"></script>
+	<style>
+		body{
+			background-image:linear-gradient(-45deg,  
+rgba(100, 95, 97, 0.8),rgba(238, 224, 195, 0.8)),url('images/task1bk.webp');
+			width:100%;
+			height:600px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+		}
+		img{
+			width:300px;
+			height:100px;
+			position:absolute;
+			top:-5px;
+		}
+		h1{
+			color:rgb(4, 79, 92);
+			text-align:center;
+			position:absolute;
+			top:-5px;
+			left:600px;
+			text-shadow:5px 3px rgb(97, 139, 139);
+		}
+		div{
+			background: linear-gradient(90deg,rgb(122, 187, 184), transparent);
+			width:100%;
+			height:50px;
+		}
+		button{
+			position:relative;
+			top:350px;
+			left:550px;
+			color: rgb(194, 221, 245);
+			font-size: 20px;
+			background-color:rgb(9, 120, 128);
+			padding:20px 80px;
+			border-radius:25px;
+			border: 1px solid rgb(9, 120, 128);
+			box-shadow:4px 3px 4px 3px rgb(3, 140, 150);
+		}
+		table{
+			border-collapse:collapse;
+			position:absolute;
+			top:100px;
+			left:250px;
+			background-color:Teal;
+			color:white;
+			box-shadow:6px 3px 6px 3px rgb(131, 153, 158);
+		}
+		#table{
+			display:none;
+		}
+	</style>
+</head>
+<body >
+	<!--<img src="images/Amazon-logo.png">
+	<h1>Welcome to amazon </h1>-->
+	
+	
+	
+<script>
+	document.write("<div>");
+	document.write("<img src='images/Amazon-logo.png'>");
+	document.write("<h1>Welcome to amazon </h1>");
+	document.write("<button>STARTS</button>");
+	document.write("</div>");
+	
+	/*$(document).ready(function(){
+		$("#table").mouseenter(function(){
+			$("#table").hide(5000);
+		});
+	});*/
+	
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#table").toggle(5000);
+		});
+	});
+	document.write("<div id='table'>");
+	
+	var amazon = [{
+					"slno": 1,
+					"username": "Anitha",
+					"department": "Art&Crafts ",
+					"product": "Wall Clock",
+					"price": {
+						"min": "$10",
+						"max": "$33"
+					  },
+					"customer rating": "4.0"
+				  },
+				  {
+					"slno": 2,
+					"username": "Karthik",
+					"department": "Baby",
+					"product": "Playmat",
+					"price": {
+						"min": "$39",
+						"max": "$149"
+					  },
+					"customer rating": "4.9"
+				  },
+				  {
+					"slno": 3,
+					"username": "Hanuveena",
+					"department": "Books",
+					"product": "Abdul Kalam books",
+					"price": {
+						"min": "$9",
+						"max": "$22"
+					  },
+					"customer rating": "5"
+				  },
+				  {
+					"slno": 4,
+					"username": "Aravind",
+					"department": "Computers",
+					"product": "Laptop Charger",
+					"price": {
+						"min": "$24",
+						"max": "$55"
+					  },
+					"customer rating": "4.3"
+				  },
+				  {
+					"slno": 5,
+					"username": "Manisha",
+					"department": "Electronics",
+					"product": "Fan",
+					"price": {
+						"min": "$16",
+						"max": "$272"
+					  },
+					"customer rating": "3.9"
+				  },
+				  {
+					"slno": 6,
+					"username": "Sanjana",
+					"department": "Women's Fashion",
+					"product": "Saree",
+					"price": {
+						"min": "$24",
+						"max": "$54"
+					  },
+					"customer rating": "4.5"
+				  },
+				  {
+					"slno": 7,
+					"username": "Pratibha",
+					"department": "Men's Fashion",
+					"product": "Formal Shirts",
+					"price": {
+						"min": "$18",
+						"max": "$51"
+					  },
+					"customer rating": "4.9"
+				  },
+				  {
+					"slno": 8,
+					"username": "Chaitra",
+					"department": "Home & Kitchen",
+					"product": "Microwave",
+					"price": {
+						"min": "$57",
+						"max": "$263"
+					  },
+					"customer rating": "4.6"
+				  },
+				  {
+					"slno": 9,
+					"username": "Rajesh",
+					"department": "Sports & Outdoors",
+					"product": "Sport Shoes",
+					"price": {
+						"min": "$13",
+						"max": "$70"
+					  },
+					"customer rating": "4.9"
+				  },
+				  {
+					"slno": 10,
+					"username": "krupa karan",
+					"department": "Toys & Games",
+					"product": "Shinchan toys",
+					"price": {
+						"min": "$14",
+						"max": "$109"
+					  },
+					"customer rating": "5"
+				  }];
+	document.write("<table border='4' cellpadding='10px' cellspacing='10px'>")
+	document.write("<tr><th>SL NO:</th><th>USERNAME</th><th>DEPARTMENT</th><th>PRODUCTS</th><th>MIN PRICE</th><th>MAX PRICE</th><th>CUSTOMER RATING</th></tr>");
+	for(var i=0; i<amazon.length;i++)
+	{
+		document.write("<tr><td>" + amazon[i]["slno"] + "</td><td>" + amazon[i]["username"] + "</td><td>" + amazon[i]["department"] +"</td><td>"+ amazon[i]["product"] +"</td><td>"+ amazon[i]["price"]["min"]+"</td><td>"+ amazon[i]["price"]["max"] +"</td><td>"+ amazon[i]["customer rating"] +"</td></tr>");
+	}
+	document.write("</table>")
+
+document.write("</div>");
+</script>
+
+
+</body>
+</html>

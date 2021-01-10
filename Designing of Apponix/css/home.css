@@ -1,0 +1,1106 @@
+/*header part css strats here */
+header{
+    background-color: rgb(40, 173, 28);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    
+}
+i{
+    padding-left: 10px;
+    text-indent: 10px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    float: right;
+    
+}
+.jobcourse{
+    background-color: rgb(241, 160, 8);
+    padding: 10px;
+}
+.freedemo{
+    background-color: rgb(23, 69, 196);
+    padding: 10px;
+    margin-right: 100px;
+}
+/*header ends here */
+
+/*navigation bar starts here*/
+#navigate{
+    position:sticky;
+    top:10px;
+    background-color: rgb(252, 247, 247);
+}
+.logo{
+    width:200px; 
+    height:45px; 
+    float: left;
+    position: relative;
+    bottom: 15px;
+    margin-right: 120px;
+    margin-left: 50px;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    width: 100%;
+    
+}
+
+li{
+    display: inline-block;
+}
+li>a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    
+}
+li>a:hover{
+    color: grey;
+}
+.dropdown-cnt{      /*dropdown work part */
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    text-decoration: initial;
+    
+    border: 1px solid grey;
+}
+.dropdown-cnt>a{
+    text-decoration: none;
+    display: block;
+    color: rgb(34, 147, 253);
+    background-color: white;
+}
+.fas fa-angle-down fa-2{      /* course nearer icon  */
+    
+    margin-right: 5px;
+}
+.dropdown-btn:hover .dropdown-cnt{
+    display: block;
+} 
+a.white{                        /*dropdown content color changing code */
+    background-color: white;
+    padding: 3px;
+    
+}
+a.white:hover{
+    background-color: rgb(2, 175, 2);
+    color: white;
+    padding: 3px;
+}
+a.grey{
+    background-color: rgb(218, 209, 209);
+    padding: 3px;
+    
+}
+a.grey:hover{
+    background-color: rgb(79, 41, 248);
+    color: white;
+    padding: 3px;
+}
+/*navigation end here */
+.mySlides {
+    display:none;           /*slides css  */
+}   
+
+/* page bottom arrow code starts here*/
+.arrow{
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    padding: 15px 10px;
+    border: 1px solid blue;
+    background-color: blue;
+    color: #fff;
+    border-radius: 25%;
+    text-align: center;
+}
+.arrow i{
+    position: relative;
+    right: 10px;
+}
+.arrow:hover{
+    background-color: rgb(73, 73, 245);
+    border: 1px solid rgb(73, 73, 245);
+}                                       /* arrow code end here */
+/*grid system*/
+
+[class*="col-"]{
+    float:left;
+}
+.col-1{ width:8.33%;}
+.col-2{ width:16.66%;}
+.col-3{ width:24.99%;}
+.col-4{ width:33.32%;}
+.col-5{ width:41.65%;}
+.col-6{ width:49.98%;}
+.col-7{ width:58.31%;}
+.col-8{ width:66.4%; }
+.col-9{ width:74.97%;}
+.col-10{ width:83.3%;}
+.col-11{ width:91.63%;}
+.col-12{ width: 99.96%;}
+.row{
+    width: 100%;
+    float: left;
+}
+ /* grid colum and row percentages part  */
+
+ /*most popular course part css starts here */
+.popularcrs{                                    /*head line code */
+    color: black;
+    font-style: bold;
+}
+.hrblue{                                    /*small underline code */
+    position:relative;
+    bottom: 5px;
+    border:5px solid blue;
+    width: 30px;   
+}
+hr{                                         /* big underline*/
+    position:relative;
+    bottom:30px;
+    border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+    margin-bottom: 25px;
+    width: 800px;
+
+}
+.img{                                           /*image position setting and border */
+    border: 1px solid grey;
+     margin-left: 100px; 
+}
+.img:hover .readmr{
+    visibility: visible;
+}
+.head3{                                         /*image under head*/
+    text-align: center;
+}
+.head3 a{
+    text-decoration: none;
+    color: rgb(17, 16, 16);
+    font-size: 15px;
+}
+.head3>a:hover{
+    color: rgb(6, 250, 6);
+}
+.para{                                              /*image under paragrap*/
+    margin-left: 100px;
+    width: 300px;
+    color: grey;
+}
+.readmr{                                            /* read more button*/
+    margin: 180px;
+    text-decoration: none;
+    color: rgb(3, 105, 189);
+}
+.readmr:hover{
+    color: orange;
+}
+/*most popular course part css end here */
+
+/*welcome to apponix part css starts here */
+.welimg{
+    margin-left: 120px;
+}
+.wel{
+    color: orange;
+    font-size: 50px;
+}
+.apponix{
+    color: blue;
+    font-size: 50px;
+}
+.welparastg {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+.welpara{
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+.welread{
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    padding: 20px 40px;
+    border: 1px solid blue;
+}
+.welread:hover{
+    background-color:white;
+    color: green;
+    padding: 20px 40px;
+    border: 2px solid green;
+}
+
+/*wel to apponix part css end here  */
+
+/*what we offer part css starts here */
+.rw2{
+    position: relative;
+    bottom: 40px;
+    
+}
+.cont1{
+    position: relative;
+    width: 80%;
+    margin-left: 100px;
+}
+.cont2{
+    position: relative;
+    width: 80%;
+    margin-left: 60px;
+}
+.cont3{
+    position: relative;
+    width: 80%;
+    margin-left: 20px;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg,green, transparent);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  .cont1:hover .overlay {
+    width: 100%;
+  }
+  .cont2:hover .overlay {
+    width: 100%;
+  }
+  .cont3:hover .overlay {
+    width: 100%;
+  }
+  
+.offerh11{
+    text-align: center;
+    border: 1px solid orange;
+    width: 272px;
+    margin-left: 100px;
+    padding: 10px 40px;
+    position: relative;
+    bottom: 20px;
+    background-color: orange;
+    color: white;
+}
+.offerh12{
+    text-align: center;
+    border: 1px solid orange;
+    width: 272px;
+    margin-left: 60px;
+    padding: 10px 40px;
+    position: relative;
+    bottom: 20px;
+    background-color: orange;
+    color: white;
+}
+.offerh13{
+    text-align: center;
+    border: 1px solid orange;
+    width: 272px;
+    margin-left: 20px;
+    padding: 10px 40px;
+    position: relative;
+    bottom: 20px;
+    background-color: orange;
+    color: white;
+}
+
+/* offer ends here */
+
+/*student rating css starts here */
+#bck{
+    height: 520px;
+}
+.ratg{
+    font-size: 30px;
+    color: white;
+}
+#fm1{                           /*form size setting here */
+    width: 350px;
+    background-color: rgb(253, 253, 253);
+    position: relative;
+    bottom: 150px;
+}
+#fm1>h1{
+    font-size: 30px;
+}
+.ratname,.ratmail,.ratphn,.ratsel1,.ratsel2{      /*input box size setting here */
+    width: 300px;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid gray;
+    margin-left: 25px;
+
+}
+.ratmsg{
+    width: 300px;
+    border-radius: 3px;
+    padding: 30px;
+    margin: 5px;
+    border: 1px solid gray;
+    margin-left: 25px; 
+}
+.ratsend{                         /* form button css here */
+    width: 300px;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgb(3, 7, 252);
+    margin-left: 25px; 
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-style: bold;
+}
+.ratclsrm,.ratonline{     /*classroom and online label setting here */
+    margin: 5px;
+    margin-left: 25px; 
+}
+.clrm,.onl{
+    color: grey;
+    font-size: 20px;
+}
+/*rating ends here  */
+
+/* why choose us parts */
+.hrblack{
+    position:relative;
+    bottom: 5px;
+    border:5px solid black;
+    width: 30px; 
+}
+.rw4{
+    margin-left: 70px;
+}
+#choose1,#choose2,#choose3,#choose4,#choose5,#choose6,#choose7,#choose8{   /* choose divition position setting */
+    border:1px solid rgb(223, 219, 219); 
+    height: 250px; 
+    width: 250px; 
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+.chooseh3{                        /*choose heading h3 tag css */
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(19, 16, 16);
+}
+.choosepara{               /*choose paragrap css */
+    margin-left: 20px;
+    word-spacing: 1.8px;
+    color: #8c8b8b;
+}
+.chooseimg{                  /* choose image position */
+    position: relative;
+    left: 100px;
+    top: 25px;
+}
+
+/*  trainer part starts here*/
+.trainerh3{                         /*trainer part heading h3  */ 
+    text-align: center;
+    font-size: 30px;
+}
+.trainerp{                              /*trainer part para */
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: #8c8b8b;
+}
+.trainerdiv1, .trainerdiv2,.trainerdiv3,.trainerdiv4{     /*trainer part div */
+    width: 250px;
+    height: 230px;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.trainerdiv1{
+    position: relative;
+    left: 110px;
+}
+.trainerdiv2{
+    position: relative;
+    left: 60px;
+}
+.trainerdiv3{
+    position: relative;
+    left: 10px;
+}
+.trainerdiv4{
+    position: relative;
+    right: 40px;
+}
+.trainerimg{                            /*trainer part image  */
+    position: relative;
+    left: 80px;
+    bottom: 30px;
+}
+.trainerh2{
+    text-align: center;
+}
+.trainerh2{
+    position: relative;
+    bottom: 40px;
+    font-size: 18px;
+}
+.trainerh4{
+    position: relative;
+    bottom: 60px;
+    text-align: center;
+    font-size: 15px;
+    color: rgba(21, 112, 248, 0.945); 
+}
+.trainercont{
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    color: #8c8b8b;
+}
+.trainerbtn{                    /* trainer part btn */
+    padding: 12px 100px;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 25px;
+    position: relative;
+    top: 30px;
+    left: 500px;
+}
+.trainerbtn>a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+/* trainer part ends here*/
+
+/* review part starts here */
+.reviewh1{
+    color: black;
+    margin-left: 150px;
+    margin-top: 60px;
+    font-size: 30px;
+}
+.reviewh2{
+    color: #8c8b8b;
+    margin-left: 250px;
+    font-size: 20px;
+}
+.reviewh4{
+    margin-left: 240px;
+    position: relative;
+    bottom: 5px;
+}
+.reviewh4>i{
+    color: orange;
+    margin: -10px;
+}
+.reviewp{
+    color: #8c8b8b;
+    margin-left: 250px;
+}
+.reviewh5{
+    color: orange;
+    margin-left: 250px;
+    position: relative;
+    bottom: 10px;
+}
+.partbtn{               /*partner botton */
+    padding: 12px 100px;
+    background-color: rgb(2, 2, 82);
+    border: 1px solid rgb(2, 2, 82);
+    border-radius: 25px;
+    position: relative;
+    top: 30px;
+    left: 100px;
+}
+.partbtn>a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+.parth1{
+    color: white;
+    margin-left: 30px;
+    margin-top: 60px;
+    font-size: 30px;
+}
+.partp{
+    color: white;
+    margin-left: 30px;
+    font-size: 19px;
+}
+.partimg{
+    margin: 10px;
+    margin-left: 200px;
+}
+#partner{
+    background-color: green;
+    height: 700px;
+}
+/*review and parter part end here*/
+ 
+/* recent placement part starts here*/
+#placement{
+    background-color: orange;
+    height: 400px;
+}
+.placeh1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 60px;
+}
+.placediv1,.placediv2,.placediv3{
+    width: 350px;
+    height: 130px;
+    border-radius: 10px;
+    background-color: white;
+}
+.placediv1{
+    position: relative;
+    left: 100px;
+}
+.placediv2{
+    position: relative;
+    left: 40px;
+}
+.placediv3{
+    position: relative;
+    right: 20px;
+}
+.placeimg{
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+.placeimg3{
+    border-radius: 50%;
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
+.placeh2{
+    color: orange;
+    position: relative;
+    bottom: 70px;
+    left: 120px;
+}
+.placeh4{
+    color: #8c8b8b;
+    position: relative;
+    bottom: 90px;
+    left: 120px;
+}
+.placeh5{
+    color: #8c8b8b;
+    position: relative;
+    bottom: 110px;
+    left: 120px;
+}
+.placeh23{
+    color: orange;
+    position: relative;
+    bottom: 100px;
+    left: 130px;
+}
+.placeh43{
+    color: #8c8b8b;
+    position: relative;
+    bottom: 120px;
+    left: 130px;
+}
+.placeh53{
+    color: #8c8b8b;
+    position: relative;
+    bottom: 140px;
+    left: 130px;
+}
+.placebtn{
+    padding: 12px 60px;
+    background-color: rgb(2, 2, 82);
+    border: 1px solid rgb(2, 2, 82);
+    border-radius: 25px;
+    position: relative;
+    top: 40px;
+    left: 520px;
+}
+.placebtn>a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+/* placement ends here*/
+
+/*student working part starts here  */
+#working{
+    height: 250px;
+}
+.studwrkh1{
+    text-align: center;
+    font-size: 30px;
+}
+.studwrkimg{
+    margin-left: 40px;
+}
+/*ends here */
+
+/*footer starts here*/
+#footdetail{
+    background-color: rgb(7, 44, 122);
+    height: 800px;
+    margin-top: 40px;
+}
+.linkh3{
+    color: white;
+    position: relative;
+    left: 150px;
+}
+.fthr{
+    position:relative;
+    bottom: 5px;
+    left: 6px;
+    border:1px solid orange;
+    width: 40px;
+}
+.quick1>a{
+    text-decoration: none;
+    color: #85c0f8;
+    position: relative;
+    left: 140px;
+    bottom: 20px;
+}
+.quick1>a:hover{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 140px;
+    bottom: 20px;  
+}
+.fthead{
+    color: white;
+    position: relative;
+    left: 15px;
+}
+.fthr2{
+    border:1px solid orange;
+    width: 40px;
+    position: relative;
+    bottom: 5px;
+    right: 130px;
+}
+.ftbrn{
+    color: white;
+    position: relative;
+    bottom: 15px;
+    left: 13px;
+}
+.ftadd{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 13px;
+    bottom: 15px;
+}
+.ftphn{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 10px;
+    bottom: 15px;
+}
+.ftphn>a{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 10px;
+}
+.ftmail>a{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 10px;
+    bottom: 15px;
+}
+.ftlast{
+    color: white;
+    position: relative;
+    top: 70px;
+    left: 13px;
+}
+
+.ftadd2{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 13px;
+    top: 60px;
+}
+.ftphn2{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 10px;
+    top: 60px;
+}
+.ftphn2>a{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 10px;
+}
+.ftmail2>a{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 10px;
+    top: 60px;
+}
+.ftlasthr{
+    width: 800px;
+    border: 0.1px solid grey;
+    position: relative;
+    top: 40px;
+    left: 180px;
+}
+.ftlasth4{
+    color: white;
+    position: relative;
+    top: 60px;
+    left: 100px;
+}
+.ftlastp{
+    color: #85c0f8;
+    position: relative;
+    top: 60px;
+    left: 100px;
+}
+.parthr{
+    width: 500px;
+    border: 1px solid rgb(238, 41, 41);
+}
+.ftpartner{
+    color: white;
+    position: relative;
+    top: 70px;
+    left: 60px;
+}
+.fthr4{
+    position:relative;
+    top: 60px;
+    right: 140px;
+    border:1px solid orange;
+    width: 40px; 
+}
+.ftpartimg1{
+    position: relative;
+    top: 60px;
+    left: 60px;
+}
+.ftpartimg2{
+    position: relative;
+    top: 80px;
+    left: 60px;
+}
+.social{
+    position: relative;
+    top: 110px;
+}
+.icon1>a{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    left: 30px;
+}
+.icon2>a{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    left: 15px;
+}
+.icon3>a{
+    color: white;
+    font-size: 25px;
+}
+.icon4>a{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    right: 15px;
+}
+.icon5>a{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    right: 30px;
+}
+.icon1>a:hover{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    left: 15px;
+    border-radius: 100%;
+    border: 5px solid green;
+}
+.icon2>a:hover{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    left: 30px;
+    border-radius: 50%;
+    border: 5px solid green;
+}
+.icon3>a:hover{
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 5px solid green;
+}
+.icon4>a:hover{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    right: 30px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 5px solid green;
+}
+.icon5>a:hover{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    right: 15px;
+    border-radius: 50%;
+    border: 5px solid green;
+}
+footer{
+    background-color: rgb(12, 47, 161);
+}
+.footp{
+    color: white;
+    margin-left: 30px;
+    
+}
+.foottxt{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+    left: 45px;
+    margin: 20px;
+    
+}
+/*footer ends here  */
+
+
+/*its a next page css i think u dont want  if u want I'll   */
+/*job page css*/
+
+
+#fm2{
+    width: 350px;
+    margin-left: 10px;
+    background-color: rgb(32, 165, 32);
+}
+.conth1{
+    text-align:center;
+    margin-top: 30px;
+    color: rgb(16, 70, 151);
+    position: relative;
+    top: 22px;
+}
+.contname,.contmail,.contphn{
+    width: 275px;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(170, 167, 167);
+    margin-left: 25px;
+    border-radius: 5px;
+}
+.contbran,.contcrs{
+    width: 295px;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid rgb(194, 192, 192);
+    margin-left: 25px;
+    border-radius: 5px;
+    
+}
+.contmsg{
+    width: 240px;
+    border-radius: 3px;
+    padding: 30px;
+    margin: 10px;
+    border: 1px solid rgb(168, 165, 165);
+    margin-left: 25px; 
+    border-radius: 5px;  
+}
+.modelb{
+    margin-left: 25px;
+    color: white;
+}
+input>.contcls .contonl{
+    margin: 10px;
+}
+.contclsrd,.contonlrd{
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.contcls,.contonl{
+    margin-left: 25px;
+    color: white;
+}
+
+.contbtn{
+    width: 150px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    border: 1px solid orange;
+    background-color: orange;
+    border-radius: 25px;
+    padding: 15px 45px;
+}
+
+.placementcont{
+    width: 750px;
+    height: 860px;
+    background-color: white;
+    position: relative;
+    top: 10px;
+    left: 100px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.placementcont>h2{
+    font-size: 18px;
+    color: rgb(26, 66, 151);
+    margin-left: 20px;
+    position: relative;
+    top: 15px;
+}
+.placementcont>p{
+    margin-left: 20px;
+    word-spacing: 5px;
+    line-height: 1.5;
+    color: #706e6ebb;
+}
+.placementcont ul>li{
+    display: block;
+    margin: 10px;
+    position: relative;
+    right: 30px;
+}
+.hrplc{
+    width: 80px;
+    position: relative;
+    top:5px;
+    right: 310px;
+    border: 2px solid orange;
+}
+.plctrnh21 li>a{
+    color: rgb(9, 57, 148);
+}
+.plctrnh22{
+    color: #5e5c5c;
+}
+.imgdiv{
+    width: 750px;
+    position: relative;
+    top: 10px;
+    left: 100px;
+    box-shadow: 0 12px 20px rgba(27, 3, 248, 0.966), 0 5px 10px rgb(19, 2, 248);
+}
+.colordiv{
+    width: 750px;
+}
+#jobpgcont>h2{
+    color: white;
+    margin-left: 20px;
+}
+#jobpgcont>p{
+    color: white;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+#jobpgcont strong{
+    color: white;
+    position: relative;
+    right: 20px;
+}
+#jobpgcont ul>li{
+    color: white;
+    line-height: 1.6;
+}
+#courses{
+    width: 330px;
+    height: 1100px;
+    margin-top: 30px;
+    margin-left: 15px;
+    background-color: #f8f4f4;
+    border: 1px solid rgb(223, 220, 220);
+}
+#courses>h2{
+    text-align: center;
+    color: rgb(95, 95, 255);
+    margin-bottom: 10px;
+}
+.menuimg{
+    float: left;
+    padding: 5px 5px 5px 5px;
+    background-color: orange;
+}
+.menuimg:hover{
+    float: left;
+    padding: 5px 5px 5px 5px;
+    background-color: blue;
+}
+.menutxt{
+    width: 280px;
+    margin: 3px 0px 10px;
+    position: relative;
+    right: 13px;
+    background-color: white;
+    box-shadow: 0 10px 12px rgba(0,0,0,0.12), 0 5px 10px rgba(0,0,0,0.11);
+}
+.menutxt:hover{
+    width: 280px;
+    margin: 3px 0px 10px;
+    position: relative;
+    right: 13px;
+    background-color: green;
+    color: white;
+}
+.menuspan{
+    position: relative;
+    top: 13px;
+    left: 3px;
+    color: #5e5c5c;
+}
+#studrating{
+    width: 330px;
+    height: 130px;
+    margin-top: 30px;
+    margin-left: 15px;
+    background-color: rgb(238, 237, 237);
+    border: 1px solid rgb(223, 220, 220);
+}
+#studrating>h2{
+    text-align: center;
+    color: blue;
+}
+#studrating>h1{
+    color: rgb(255, 187, 0);
+    font-size: 30px;
+    margin-left: 70px;
+}
+#studrating h1>i{
+    margin: -12px;
+}

@@ -1,0 +1,567 @@
+/*header part css strats here */
+header{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    
+}
+i{
+    padding-left: 10px;
+    text-indent: 10px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    float: right;
+    
+}
+.jobcourse{
+    background-color: orange;
+    padding: 10px;
+}
+.freedemo{
+    background-color: blue;
+    padding: 10px;
+    margin-right: 100px;
+}
+/*header ends here */
+
+/*navigation bar starts here*/
+#navigate{
+    position:sticky;
+    top:10px;
+    background-color: rgb(252, 247, 247);
+}
+.logo{
+    width:200px; 
+    height:45px; 
+    float: left;
+    position: relative;
+    bottom: 15px;
+    margin-right: 120px;
+    margin-left: 50px;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    width: 100%;
+    
+}
+
+li{
+    display: inline-block;
+}
+li>a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    
+}
+li>a:hover{
+    color: grey;
+}
+.dropdown-cnt{      /*dropdown work part */
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    text-decoration: initial;
+    
+    border: 1px solid grey;
+}
+.dropdown-cnt>a{
+    text-decoration: none;
+    display: block;
+    color: rgb(34, 147, 253);
+    background-color: white;
+}
+.fas fa-angle-down fa-2{      /* course nearer icon  */
+    
+    margin-right: 5px;
+}
+.dropdown-btn:hover .dropdown-cnt{
+    display: block;
+} 
+a.white{                        /*dropdown content color changing code */
+    background-color: white;
+    padding: 3px;
+    
+}
+a.white:hover{
+    background-color: rgb(2, 175, 2);
+    color: white;
+    padding: 3px;
+}
+a.grey{
+    background-color: rgb(218, 209, 209);
+    padding: 3px;
+    
+}
+a.grey:hover{
+    background-color: rgb(79, 41, 248);
+    color: white;
+    padding: 3px;
+}
+/*navigation end here */
+
+/* page bottom arrow code starts here*/
+.arrow{
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    padding: 15px 10px;
+    border: 1px solid blue;
+    background-color: blue;
+    color: #fff;
+    border-radius: 25%;
+    text-align: center;
+}
+.arrow i{
+    position: relative;
+    right: 10px;
+}
+.arrow:hover{
+    background-color: rgb(73, 73, 245);
+    border: 1px solid rgb(73, 73, 245);
+}                                       /* arrow code end here */
+/*grid system*/
+
+[class*="col-"]{
+    float:left;
+}
+.col-1{ width:8.33%;}
+.col-2{ width:16.66%;}
+.col-3{ width:24.99%;}
+.col-4{ width:33.32%;}
+.col-5{ width:41.65%;}
+.col-6{ width:49.98%;}
+.col-7{ width:58.31%;}
+.col-8{ width:66.4%; }
+.col-9{ width:74.97%;}
+.col-10{ width:83.3%;}
+.col-11{ width:91.63%;}
+.col-12{ width: 99.96%;}
+.row{
+    width: 100%;
+    float: left;
+}
+ /* grid colum and row percentages part  */
+
+
+/*its a next page css i think u dont want  if u want I'll   */
+/*job page css*/
+
+
+#fm2{
+    width: 350px;
+    margin-left: 10px;
+    background-color: green;
+}
+.conth1{
+    text-align:center;
+    margin-top: 30px;
+    color: blue;
+    position: relative;
+    top: 22px;
+}
+.contname,.contmail,.contphn{
+    width: 275px;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid gray;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+.contbran,.contcrs{
+    width: 295px;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid gray;
+    margin-left: 25px;
+    border-radius: 5px;
+    
+}
+.contmsg{
+    width: 240px;
+    border-radius: 3px;
+    padding: 30px;
+    margin: 10px;
+    border: 1px solid gray;
+    margin-left: 25px; 
+    border-radius: 5px;  
+}
+.modelb{
+    margin-left: 25px;
+    color: white;
+}
+input>.contcls .contonl{
+    margin: 10px;
+}
+.contclsrd,.contonlrd{
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.contcls,.contonl{
+    margin-left: 25px;
+    color: white;
+}
+
+.contbtn{
+    width: 150px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    border: 1px solid orange;
+    background-color: orange;
+    border-radius: 25px;
+    padding: 15px 45px;
+}
+
+.placementcont{
+    width: 750px;
+    height: 820px;
+    background-color: white;
+    position: relative;
+    top: 10px;
+    left: 100px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.placementcont>h2{
+    font-size: 18px;
+    color: blue;
+    margin-left: 20px;
+    position: relative;
+    top: 15px;
+}
+.placementcont>p{
+    margin-left: 20px;
+    word-spacing: 5px;
+    line-height: 1.5;
+}
+.placementcont ul>li{
+    display: block;
+    margin: 10px;
+}
+.hrplc{
+    width: 80px;
+    position: relative;
+    top:5px;
+    right: 310px;
+    border: 2px solid orange;
+}
+ul.circle>li{
+    list-style-type: circle;
+    color: orange;
+}
+
+.imgdiv{
+    width: 750px;
+    position: relative;
+    top: 10px;
+    left: 100px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.colordiv{
+    width: 750px;
+}
+#jobpgcont>h2{
+    color: white;
+}
+#jobpgcont>p{
+    color: white;
+}
+#jobpgcont>strong{
+    color: white;
+}
+#jobpgcont ul>li{
+    color: white;
+    list-style-type: circle ;
+}
+#courses{
+    width: 330px;
+    height: 1100px;
+    margin-top: 30px;
+    margin-left: 15px;
+    background-color: #f8f4f4;
+    border: 1px solid grey;
+}
+#courses>h2{
+    text-align: center;
+    color: rgb(95, 95, 255);
+    margin-bottom: 10px;
+}
+.menuimg{
+    float: left;
+    padding: 5px 5px 5px 5px;
+    background-color: orange;
+}
+.menuimg:hover{
+    float: left;
+    padding: 5px 5px 5px 5px;
+    background-color: blue;
+}
+.menutxt{
+    width: 280px;
+    margin: 3px 0px 10px;
+    position: relative;
+    right: 13px;
+    background-color: white;
+    box-shadow: 0 10px 12px rgba(0,0,0,0.12), 0 5px 10px rgba(0,0,0,0.11);
+}
+.menutxt:hover{
+    width: 280px;
+    margin: 3px 0px 10px;
+    position: relative;
+    right: 13px;
+    background-color: green;
+    color: white;
+}
+.menuspan{
+    position: relative;
+    top: 13px;
+    left: 3px;
+    color: #5e5c5c;
+}
+
+/*footer starts here*/
+#footdetail{
+    background-color: blue;
+    height: 800px;
+}
+.linkh3{
+    color: white;
+    position: relative;
+    left: 150px;
+}
+.fthr{
+    position:relative;
+    bottom: 5px;
+    left: 6px;
+    border:1px solid orange;
+    width: 40px;
+}
+.quick1>a{
+    text-decoration: none;
+    color: #85c0f8;
+    position: relative;
+    left: 140px;
+    bottom: 20px;
+}
+.quick1>a:hover{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 140px;
+    bottom: 20px;  
+}
+.fthead{
+    color: white;
+    position: relative;
+    left: 15px;
+}
+.fthr2{
+    border:1px solid orange;
+    width: 40px;
+    position: relative;
+    bottom: 5px;
+    right: 130px;
+}
+.ftbrn{
+    color: white;
+    position: relative;
+    bottom: 15px;
+    left: 13px;
+}
+.ftadd{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 13px;
+    bottom: 15px;
+}
+.ftphn{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 10px;
+    bottom: 15px;
+}
+.ftphn>a{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 10px;
+}
+.ftmail>a{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 10px;
+    bottom: 15px;
+}
+.ftlast{
+    color: white;
+    position: relative;
+    top: 70px;
+    left: 13px;
+}
+
+.ftadd2{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 13px;
+    top: 60px;
+}
+.ftphn2{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 10px;
+    top: 60px;
+}
+.ftphn2>a{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 10px;
+}
+.ftmail2>a{
+    color: rgb(89, 141, 252);
+    position: relative;
+    left: 10px;
+    top: 60px;
+}
+.ftlasthr{
+    width: 800px;
+    border: 0.1px solid grey;
+    position: relative;
+    top: 40px;
+    left: 180px;
+}
+.ftlasth4{
+    color: white;
+    position: relative;
+    top: 60px;
+    left: 100px;
+}
+.ftlastp{
+    color: #85c0f8;
+    position: relative;
+    top: 60px;
+    left: 100px;
+}
+.parthr{
+    width: 500px;
+    border: 1px solid rgb(238, 41, 41);
+}
+.ftpartner{
+    color: white;
+    position: relative;
+    top: 70px;
+    left: 60px;
+}
+.fthr4{
+    position:relative;
+    top: 60px;
+    right: 140px;
+    border:1px solid orange;
+    width: 40px; 
+}
+.ftpartimg1{
+    position: relative;
+    top: 60px;
+    left: 60px;
+}
+.ftpartimg2{
+    position: relative;
+    top: 80px;
+    left: 60px;
+}
+.social{
+    position: relative;
+    top: 110px;
+}
+.icon1>a{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    left: 30px;
+}
+.icon2>a{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    left: 15px;
+}
+.icon3>a{
+    color: white;
+    font-size: 25px;
+}
+.icon4>a{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    right: 15px;
+}
+.icon5>a{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    right: 30px;
+}
+.icon1>a:hover{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    left: 15px;
+    border-radius: 100%;
+    border: 5px solid green;
+}
+.icon2>a:hover{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    left: 30px;
+    border-radius: 50%;
+    border: 5px solid green;
+}
+.icon3>a:hover{
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 5px solid green;
+}
+.icon4>a:hover{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    right: 30px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 5px solid green;
+}
+.icon5>a:hover{
+    color: white;
+    font-size: 25px;
+    position: relative;
+    right: 15px;
+    border-radius: 50%;
+    border: 5px solid green;
+}
+footer{
+    background-color: rgb(4, 4, 153);
+}
+.footp{
+    color: white;
+    margin-left: 30px;
+    
+}
+.foottxt{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+    left: 45px;
+    margin: 20px;
+    
+}
+/*footer ends here  */

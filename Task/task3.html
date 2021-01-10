@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>BANK INTEREST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+<style>
+	body{
+		background-image:url("images/backgrd.jpg");
+	}
+	#siForm{
+		width:400px;
+		height:250px;
+		border:5px solid white;
+		position:relative;
+		top:30px;
+		left:500px;
+		background-color:teal;
+	}
+	h1{
+		color:rgb(1, 20, 20);
+		text-shadow:5px 3px rgb(97, 139, 139);
+		box-shadow: 5px 3px 5px 3px teal;
+	}
+	h3{
+		color:white;
+		position:relative;
+		top:20px;
+		left:400px;
+		text-decoration:underline;
+	}
+	.lab{
+		margin:20px;
+		color:white;
+	}
+	input{
+		margin:10px;
+		padding: 10px 50px;
+	}
+	button{
+		margin-left:150px;
+		margin-top:30px;
+		background-color:white;
+		border:1px solid green;
+		padding:10px 30px;
+		color:teal;
+	}
+	.btn{
+		margin-left:500px;
+		margin-top:20px;
+		background-color:white;
+		border:1px solid green;
+		padding:10px 30px;
+		color:teal;
+	}
+	#siOutput-01{
+		position:relative;
+		top:30px;
+		text-align:center;
+	}
+	#siOutput-02{
+		text-align:center;
+		position:relative;
+		top:20px;
+	}
+	
+</style>
+</head>
+<body>
+	<div class="">
+  <h1 align="center">APPONIX BANK INTEREST CALCULATOR</h1>
+  
+  <div  id="simple-interest">
+    <h3>Simple Interest</h3>
+    <form id="siForm">
+      
+        <label for="principalSimple" class="lab">Principal</label>
+        <input type="text" id="principalSimple" placeholder="Enter amount without dollar sign">
+     
+      
+        <label for="interestSimple" class="lab">Interest Rate</label>
+        <input type="text"  id="interestSimple" placeholder="Example: 12%">
+      
+     
+        <label for="termSimple" class="lab">Term of Loan</label>
+        <input type="text"  id="termSimple" placeholder="Example: 2 (must be in terms of years)">
+      
+		<button type="submit" id="btnSimple" onclick="simpleInterest()">Submit</button>
+		
+    </form>
+    <div>
+      <p id="siOutput-01"></p>
+      <p id="siOutput-02"></p>
+    </div>
+    <div >
+      <input  type="button" value="Reset" class="btn" onClick="document.getElementById('siForm').reset()">
+    </div>
+  </div>
+ </div>
+
+<script>
+
+    var principal = 0;
+    var interestRate = 0;
+    var termOfLoan = 0;
+    var amount = 0;
+
+    function simpleInterest() {
+        event.preventDefault();
+        var principal = parseFloat(document.getElementById("principalSimple").value);
+        var interestRate = parseFloat(document.getElementById("interestSimple").value);
+        interestRate = interestRate / 100;
+        var termOfLoan = parseFloat(document.getElementById("termSimple").value);
+        var simpleInt = principal * interestRate * termOfLoan;
+        var amount = (principal + simpleInt).toFixed(2);
+        document.getElementById("siOutput-01").innerHTML = "Interest: Rs" + simpleInt.toFixed(2);
+        document.getElementById("siOutput-02").innerHTML = "Total plus interest: Rs" + amount;
+    }
+
+</script>
+
+</body>
+</html>

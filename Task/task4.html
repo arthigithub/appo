@@ -1,0 +1,158 @@
+
+<html>
+<head>
+    <title>food menu availability </title>
+    <style>
+        body{
+            background-image:linear-gradient(-45deg,  
+rgba(245, 41, 123, 0.8),rgba(67, 141, 141, 0.8)),url('images/task1bk2.jpg');
+			width:100%;
+			height:600px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+        }
+    	h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        div{
+            width:400px;
+            height: 400px;
+            position: absolute;
+            left: 450px;
+            border: 2px solid teal;
+            box-shadow: 5px 3px 5px 3px teal;
+        }
+        h3{
+            color: white;
+            position: relative;
+            top: 20px;
+            left:85px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        input{
+            position: relative;
+            top: 40px;
+            left:50px;
+            padding: 20px 80px;
+            color: white;
+            font-size: 15px;
+            border: 1px solid teal;
+            border-radius: 30px;
+            background-color:teal;
+        }
+        input:hover{
+            position: relative;
+            top: 40px;
+            left:50px;
+            padding: 20px 80px;
+            color: teal;
+            font-size: 15px;
+            border: 1px solid teal;
+            border-radius: 30px;
+            background-color:rgb(238, 247, 247);
+        }
+        select{
+            position: relative;
+            top: 80px;
+            left: 70px;
+            padding: 15px 80px;
+        }
+        p{
+            position: relative;
+            top: 120px;
+            left: 70px;
+            color: white;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+   <h1>APX HOTEL</h1>
+   <div>
+       <h3>Menu Availability Check</h3>
+        <input type="button" style="margin:10px 0;" onclick="availability()" value="CHECK food Availability" />
+    
+        <select id="sel" onchange="show(this)">
+            <option value="">-- Select --</option>
+        </select>
+
+        <p id="msg"></p>
+   </div> 
+</body>
+
+<script>
+    function availability() {
+        
+        var menu = [
+            {
+                "Available": "100plates",
+                "food": "Dosa"
+            },
+            {
+                "Available": "200plates",
+                "food": "Puri"
+            },
+            {
+                "Available": "150plates",
+                "food": "Plain Rice"
+            },
+            {
+                "Available": "220plates",
+                "food": "Veg Briyani"
+            },
+            {
+                "Available": "300plates",
+                "food": "Chicken Briyani"
+            },
+            {
+                "Available": "50plates",
+                "food": "Mutton Briyani"
+            },
+            {
+                "Available": "120plates",
+                "food": "Tandoori Chicken"
+            },
+            {
+                "Available": "100plates",
+                "food": "Kadai Chicken"
+            },
+            {
+                "Available": "30plates",
+                "food": "Tawa Roti"
+            },
+            {
+                "Available": "80plates",
+                "food": "Butter Naan"
+            },
+            {
+                "Available": "140plates",
+                "food": "Curd Rice"
+            },
+            {
+                "Available": "100plates",
+                "food": "Jeera Rice"
+            },
+            {
+                "Available": "30plates",
+                "food": "Egg Briyani"
+            },
+            {
+                "Available": "80plates",
+                "food": "Missi Roti"
+            },
+        ];
+
+        var opt = document.getElementById('sel');
+        for (var i = 0; i < menu.length; i++) {
+            opt.innerHTML = opt.innerHTML +'<option value="' + menu[i]['Available'] + '">' + menu[i]['food'] + '</option>';
+        }
+    }
+
+    function show(opt) {
+        var msg = document.getElementById('msg');
+        msg.innerHTML = 'Selected Food: <b>' + opt.options[opt.selectedIndex].text + '</b> </br>' +'Available: <b>' + opt.value + '</b>';
+    }
+</script>
+</html>
